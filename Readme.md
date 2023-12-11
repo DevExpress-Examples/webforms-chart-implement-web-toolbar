@@ -5,10 +5,6 @@
 <!-- default badges end -->
 
 # Web Forms Chart - How to Implement the Web Toolbar
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e1312/)**
-<!-- run online end -->
-
 
 <p>The following example demonstrates how to create a toolbar similar to the one available in the <a href="http://demos.devexpress.com/XtraChartsDemos/">XtraCharts Web Demo</a>. This toolbar allows you to print a WebChartControl, export it to various formats (PDF, XLS, PNG, JPEG, BMP, TIFF, GIF), as well as change its palette and appearance.</p>
 
