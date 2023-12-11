@@ -3,13 +3,8 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E1312)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
-* [Default.aspx](./CS/WebSite/Default.aspx) (VB: [Default.aspx](./VB/WebSite/Default.aspx))
-* [Default.aspx.cs](./CS/WebSite/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))
-<!-- default file list end -->
-# XtraCharts Web Toolbar
+# Webforms Chart - How to Implement the Web Toolbar
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/e1312/)**
 <!-- run online end -->
@@ -19,4 +14,13 @@
 
 <br/>
 
+![Chart toolbar](./images/chart-toolber.png)
 
+## Files to Review
+
+* [Default.aspx](./CS/WebSite/Default.aspx) (VB: [Default.aspx](./VB/WebSite/Default.aspx))
+* [Default.aspx.cs](./CS/WebSite/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))
+
+## Documentation
+
+* [Data Editors - Product Information](https://docs.devexpress.com/AspNet/7898/components/data-editors/product-information)
