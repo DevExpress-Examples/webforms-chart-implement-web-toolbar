@@ -1,14 +1,14 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true"  CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
-<%@ Register Assembly="DevExpress.XtraCharts.v8.2, Version=8.2.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4"
+<%@ Register Assembly="DevExpress.XtraCharts.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.XtraCharts" TagPrefix="cc1" %>
 
-<%@ Register Assembly="DevExpress.XtraCharts.v8.2.Web, Version=8.2.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4"
+<%@ Register Assembly="DevExpress.XtraCharts.v13.1.Web, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.XtraCharts.Web" TagPrefix="dxchartsui" %>
 
-<%@ Register Assembly="DevExpress.Web.v8.2, Version=8.2.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4"
+<%@ Register Assembly="DevExpress.Web.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.Web.ASPxMenu" TagPrefix="dxm" %>
-<%@ Register Assembly="DevExpress.Web.ASPxEditors.v8.2, Version=8.2.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4"
+<%@ Register Assembly="DevExpress.Web.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.Web.ASPxEditors" TagPrefix="dxe" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -82,10 +82,10 @@
 }" />
             </dxm:ASPxMenu>
             <!--WebChartControl-->
-            <dxchartsui:WebChartControl ID="webChartControl" runat="server" ClientInstanceName="chart" DiagramTypeName="XYDiagram" Height="417px" Width="647px" OnCustomCallback="chart_CustomCallback">
+            <dxchartsui:WebChartControl ID="webChartControl" runat="server" ClientInstanceName="chart"  Height="417px" Width="647px" OnCustomCallback="chart_CustomCallback">
                 <SeriesSerializable>
-                    <cc1:series argumentscaletype="Numerical" labeltypename="SideBySideBarSeriesLabel"
-                        name="Series 1" pointoptionstypename="PointOptions" seriesviewtypename="SideBySideBarSeriesView"><Points>
+                    <cc1:series argumentscaletype="Numerical" 
+                        name="Series 1"  ><Points>
 <cc1:SeriesPoint Values="1" ArgumentSerializable="1"></cc1:SeriesPoint>
 <cc1:SeriesPoint Values="2" ArgumentSerializable="2"></cc1:SeriesPoint>
 <cc1:SeriesPoint Values="3" ArgumentSerializable="3"></cc1:SeriesPoint>
@@ -93,20 +93,30 @@
 <cc1:SeriesPoint Values="5" ArgumentSerializable="5"></cc1:SeriesPoint>
 </Points>
 
-<View HiddenSerializableString="to be serialized"></View>
+<ViewSerializable>
+<cc1:SideBySideBarSeriesView HiddenSerializableString="to be serialized"></cc1:SideBySideBarSeriesView>
+</ViewSerializable>
 
-<Label HiddenSerializableString="to be serialized" LineVisible="True" >
-<FillStyle FillOptionsTypeName="SolidFillOptions">
-<Options HiddenSerializableString="to be serialized"></Options>
+<LabelSerializable>
+<cc1:SideBySideBarSeriesLabel HiddenSerializableString="to be serialized" LineVisible="True" >
+<FillStyle >
+<OptionsSerializable>
+<cc1:SolidFillOptions HiddenSerializableString="to be serialized"></cc1:SolidFillOptions>
+</OptionsSerializable>
 </FillStyle>
-</Label>
+</cc1:SideBySideBarSeriesLabel>
+</LabelSerializable>
 
-<PointOptions HiddenSerializableString="to be serialized"></PointOptions>
+<PointOptionsSerializable>
+<cc1:PointOptions HiddenSerializableString="to be serialized"></cc1:PointOptions>
+</PointOptionsSerializable>
 
-<LegendPointOptions HiddenSerializableString="to be serialized"></LegendPointOptions>
+<LegendPointOptionsSerializable>
+<cc1:PointOptions HiddenSerializableString="to be serialized"></cc1:PointOptions>
+</LegendPointOptionsSerializable>
 </cc1:series>
-                    <cc1:series argumentscaletype="Numerical" labeltypename="SideBySideBarSeriesLabel"
-                        name="Series 2" pointoptionstypename="PointOptions" seriesviewtypename="SideBySideBarSeriesView"><Points>
+                    <cc1:series argumentscaletype="Numerical" 
+                        name="Series 2"  ><Points>
 <cc1:SeriesPoint Values="5" ArgumentSerializable="1"></cc1:SeriesPoint>
 <cc1:SeriesPoint Values="1" ArgumentSerializable="2"></cc1:SeriesPoint>
 <cc1:SeriesPoint Values="2" ArgumentSerializable="3"></cc1:SeriesPoint>
@@ -114,20 +124,30 @@
 <cc1:SeriesPoint Values="4" ArgumentSerializable="5"></cc1:SeriesPoint>
 </Points>
 
-<View HiddenSerializableString="to be serialized"></View>
+<ViewSerializable>
+<cc1:SideBySideBarSeriesView HiddenSerializableString="to be serialized"></cc1:SideBySideBarSeriesView>
+</ViewSerializable>
 
-<Label HiddenSerializableString="to be serialized" LineVisible="True" >
-<FillStyle FillOptionsTypeName="SolidFillOptions">
-<Options HiddenSerializableString="to be serialized"></Options>
+<LabelSerializable>
+<cc1:SideBySideBarSeriesLabel HiddenSerializableString="to be serialized" LineVisible="True" >
+<FillStyle >
+<OptionsSerializable>
+<cc1:SolidFillOptions HiddenSerializableString="to be serialized"></cc1:SolidFillOptions>
+</OptionsSerializable>
 </FillStyle>
-</Label>
+</cc1:SideBySideBarSeriesLabel>
+</LabelSerializable>
 
-<PointOptions HiddenSerializableString="to be serialized"></PointOptions>
+<PointOptionsSerializable>
+<cc1:PointOptions HiddenSerializableString="to be serialized"></cc1:PointOptions>
+</PointOptionsSerializable>
 
-<LegendPointOptions HiddenSerializableString="to be serialized"></LegendPointOptions>
+<LegendPointOptionsSerializable>
+<cc1:PointOptions HiddenSerializableString="to be serialized"></cc1:PointOptions>
+</LegendPointOptionsSerializable>
 </cc1:series>
-                    <cc1:series argumentscaletype="Numerical" labeltypename="SideBySideBarSeriesLabel"
-                        name="Series 3" pointoptionstypename="PointOptions" seriesviewtypename="SideBySideBarSeriesView"><Points>
+                    <cc1:series argumentscaletype="Numerical" 
+                        name="Series 3"  ><Points>
 <cc1:SeriesPoint Values="4" ArgumentSerializable="1"></cc1:SeriesPoint>
 <cc1:SeriesPoint Values="5" ArgumentSerializable="2"></cc1:SeriesPoint>
 <cc1:SeriesPoint Values="1" ArgumentSerializable="3"></cc1:SeriesPoint>
@@ -135,32 +155,52 @@
 <cc1:SeriesPoint Values="3" ArgumentSerializable="5"></cc1:SeriesPoint>
 </Points>
 
-<View HiddenSerializableString="to be serialized"></View>
+<ViewSerializable>
+<cc1:SideBySideBarSeriesView HiddenSerializableString="to be serialized"></cc1:SideBySideBarSeriesView>
+</ViewSerializable>
 
-<Label HiddenSerializableString="to be serialized" LineVisible="True" >
-<FillStyle FillOptionsTypeName="SolidFillOptions">
-<Options HiddenSerializableString="to be serialized"></Options>
+<LabelSerializable>
+<cc1:SideBySideBarSeriesLabel HiddenSerializableString="to be serialized" LineVisible="True" >
+<FillStyle >
+<OptionsSerializable>
+<cc1:SolidFillOptions HiddenSerializableString="to be serialized"></cc1:SolidFillOptions>
+</OptionsSerializable>
 </FillStyle>
-</Label>
+</cc1:SideBySideBarSeriesLabel>
+</LabelSerializable>
 
-<PointOptions HiddenSerializableString="to be serialized"></PointOptions>
+<PointOptionsSerializable>
+<cc1:PointOptions HiddenSerializableString="to be serialized"></cc1:PointOptions>
+</PointOptionsSerializable>
 
-<LegendPointOptions HiddenSerializableString="to be serialized"></LegendPointOptions>
+<LegendPointOptionsSerializable>
+<cc1:PointOptions HiddenSerializableString="to be serialized"></cc1:PointOptions>
+</LegendPointOptionsSerializable>
 </cc1:series>
                 </SeriesSerializable>
-                <SeriesTemplate LabelTypeName="SideBySideBarSeriesLabel" PointOptionsTypeName="PointOptions"
-                    SeriesViewTypeName="SideBySideBarSeriesView">
-                    <View HiddenSerializableString="to be serialized">
-                    </View>
-                    <Label HiddenSerializableString="to be serialized" LineVisible="True" >
-                        <FillStyle FillOptionsTypeName="SolidFillOptions">
-                            <Options HiddenSerializableString="to be serialized" />
+                <SeriesTemplate  
+                    >
+                    <ViewSerializable>
+<cc1:SideBySideBarSeriesView HiddenSerializableString="to be serialized">
+                    </cc1:SideBySideBarSeriesView>
+</ViewSerializable>
+                    <LabelSerializable>
+<cc1:SideBySideBarSeriesLabel HiddenSerializableString="to be serialized" LineVisible="True" >
+                        <FillStyle >
+                            <OptionsSerializable>
+<cc1:SolidFillOptions HiddenSerializableString="to be serialized" />
+</OptionsSerializable>
                         </FillStyle>
-                    </Label>
-                    <PointOptions HiddenSerializableString="to be serialized">
-                    </PointOptions>
-                    <LegendPointOptions HiddenSerializableString="to be serialized">
-                    </LegendPointOptions>
+                    </cc1:SideBySideBarSeriesLabel>
+</LabelSerializable>
+                    <PointOptionsSerializable>
+<cc1:PointOptions HiddenSerializableString="to be serialized">
+                    </cc1:PointOptions>
+</PointOptionsSerializable>
+                    <LegendPointOptionsSerializable>
+<cc1:PointOptions HiddenSerializableString="to be serialized">
+                    </cc1:PointOptions>
+</LegendPointOptionsSerializable>
                 </SeriesTemplate>
                 <ClientSideEvents EndCallback="function (s, e) {
 	for (var i = 0; i &lt; cbPalette.GetItemCount(); i++) {
@@ -169,16 +209,20 @@
 		}
 	}
 }" />
-                <Diagram>
+                <DiagramSerializable>
+<cc1:XYDiagram>
                     <axisx visibleinpanesserializable="-1">
 <Range SideMarginsEnabled="True"></Range>
 </axisx>
                     <axisy visibleinpanesserializable="-1">
 <Range SideMarginsEnabled="True"></Range>
 </axisy>
-                </Diagram>
-                <FillStyle FillOptionsTypeName="SolidFillOptions">
-                    <Options HiddenSerializableString="to be serialized" />
+                </cc1:XYDiagram>
+</DiagramSerializable>
+                <FillStyle >
+                    <OptionsSerializable>
+<cc1:SolidFillOptions HiddenSerializableString="to be serialized" />
+</OptionsSerializable>
                 </FillStyle>
             </dxchartsui:WebChartControl>
         </form>
